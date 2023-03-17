@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sequelize db:migrate && sequelize db:seed:all",
     "start": "nodemon -L",
-    "test": "mocha -w ./tests/**/*.spec.js"
+    "test": "mocha -w ./tests/**/*.spec.js",
+    "build": "sequelize db:migrate && sequelize db:seed:all",
+    "sequelize": "./node_modules/.bin/sequelize"
   },
   "author": "Pedro Endara",
   "license": "ISC",
