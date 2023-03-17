@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "sequelize db:migrate && sequelize db:seed:all",
     "start": "nodemon -L",
     "test": "mocha -w ./tests/**/*.spec.js"
   },
